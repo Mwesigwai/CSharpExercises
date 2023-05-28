@@ -49,6 +49,9 @@ namespace Exercise
             {
                 Console.WriteLine("Not a prime number");
             }
+          
+          //Console.WriteLine();
+          Console.WriteLine();
           Console.WriteLine("Do you want to restart?");
           Console.WriteLine("Enter yes to restart");
           userChoice = Console.ReadLine();
