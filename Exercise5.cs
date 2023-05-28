@@ -2,7 +2,7 @@ using System;
 
 namespace Exercise
 {
-    class MyClass
+    class BasicCalculator
     {
         public static int firstNumber;
         public static int secondNumber;
