@@ -13,7 +13,10 @@ namespace Exercise
             int number;
             int factors = 0;
             bool isInt;
+            string userChoice;
           
+         do
+         {  
            do
             {
                 Console.WriteLine("Enter a number");
@@ -46,6 +49,10 @@ namespace Exercise
             {
                 Console.WriteLine("Not a prime number");
             }
+          Console.WriteLine("Do you want to restart?");
+          Console.WriteLine("Enter yes to restart");
+          userChoice = Console.ReadLine();
+          }while(userChoice == "yes");
         }
     }
 }
