@@ -26,7 +26,10 @@ namespace Exercise
                 {
                     Console.WriteLine(i + " fizz buzz");
                 }
-
+                 else
+                {
+                    Console.WriteLine(i);
+                }
 
             }
         }
