@@ -31,7 +31,7 @@ namespace CS
                         {
                             Console.WriteLine("try again");
                             userINput = Console.ReadLine();
-                            //userIsTrue = int.TryParse(userINput, out result) && result >= 1 && result <= 10; ;
+                            //userIsTrue = int.TryParse(userINput, out result) && result >= 1 && result <= 10;
                         }
                     }
 
