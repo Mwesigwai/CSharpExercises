@@ -18,12 +18,17 @@ namespace CS
             myNumbers[7] = 49;
             myNumbers[8] = 89;
             myNumbers[9] = 67;
-
-            for (int i = 0; i < 10; i++)
+            
+             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(myNumbers[i]);
+                Console.Write(myNumbers[i] + " ");
             }
+            Console.WriteLine();
+            Console.Write("The sum of the numbes is: ");
             Console.WriteLine(myNumbers.Sum());
+            Console.Write("The largest number in the array is: ");
+            Console.WriteLine(myNumbers.Max());
+           
         }
     }
 
