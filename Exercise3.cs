@@ -14,7 +14,7 @@ namespace Exercise
                 string word = Console.ReadLine();
                 char[] wordAsChars = word.ToCharArray();
                 //Console.WriteLine(wordAsChars[1]);
-                for (int i = word.Length - 1; i > 0; i--)
+                for (int i = word.Length - 1; i >= 0; i--)
                 {
                     Console.Write(wordAsChars[i]);
                 }
