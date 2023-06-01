@@ -16,16 +16,29 @@ namespace CS
                 if (tempIsCorrect)
                 {
                     temperature = result;
+                    if (temperature <= 0)
+                    {
+                        Console.WriteLine(" opss!! Freezing weather");
+                    }
+
+                    else if(temperature > 0 && temperature <= 10)
+                    {
+                        Console.WriteLine("Very cold weather");
+                    }
+
+                    else if (temperature >= 10 && temperature <= 20)
+                    {
+                        Console.WriteLine("Normal temperature");
+                    }
+
+                    else if (temperature >= 20 && temperature <= 30)
+                    {
+                        Console.WriteLine("It is hot");
+                    }
+
+                    else if (temperature >= 40)
+                    {
+                        Console.WriteLine("It's very hot");
+                    }
+
                 }
-
-
-                else
-                {
-                    Console.WriteLine("Wrong input");
-                }
-            } while (!tempIsCorrect); 
-
-        }
-    }
-}
-
