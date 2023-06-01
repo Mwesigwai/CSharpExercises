@@ -6,11 +6,12 @@ namespace CS
 
     {
         public static string usersChoice;
+        public static int temperature;
         public static void Main(string[] args)
         {
-            Console.WriteLine("This program converts temprature from degrees celcius to degrees fahranheit and vise-vasa");
-            Console.WriteLine("Enter c to convert from degrees fahranheit to celcius");
-            Console.WriteLine("Or f to covert from degrees celcius to degrees fahranheit");
+            Console.WriteLine("This program converts temprature from degrees celsius to degrees fahrenheit and vise-vasa");
+            Console.WriteLine("Enter c to convert from degrees fahrenheit to celsius");
+            Console.WriteLine("Or f to convert from degrees celsius to degrees fahranheit");
 
 
             do
@@ -20,15 +21,15 @@ namespace CS
            
                 if (usersChoice == "f" || usersChoice == "F")
                 {
-                    Console.WriteLine("gggggg");
-                    //ChangeToFahranheit();
+                    //Console.WriteLine("gggggg");
+                    ChangeToFahrenheit();
                     break;
                 }
 
                 if (usersChoice == "c" || usersChoice .Equals("C"))
                 {
-                    Console.WriteLine("Ch");
-                    //ChangeToCelcius();
+                    //Console.WriteLine("Ch");
+                    ChangeToCelsius();
                     break;
                 }
 
@@ -39,8 +40,20 @@ namespace CS
             } while (usersChoice != "f" || usersChoice != "F" || usersChoice != "c" || usersChoice != "C");
         }
 
-        public static void ChangeToFahranheit()
+        public static void ChangeToFahrenheit()
         {
+            PromptUser("degrees celsius");
+            Console.WriteLine("The temperature is " + (temperature + 32 ) * 9/5);
+        }
+
+
+
+
+        public static void ChangeToCelsius()
+        {
+            PromptUser("degrees fahrenheit");
+            Console.WriteLine("The temperature is " + (temperature - 32) * 5/9 + 
+            " degrees celsius" );
 
         }
 
@@ -54,15 +67,20 @@ namespace CS
                 isTrueTemp = int.TryParse(tempString, out int result);
                 if (isTrueTemp)
                 {
-                    int temperature = result;
+                    temperature = result;
                 }
                 else
                 {
                     Console.WriteLine("Temp must be in numbers and in correct range");
+                    tempString = Console.ReadLine();
+
                 }
             } while (!isTrueTemp);
         }
     }
 }
+
+
+
 
 
