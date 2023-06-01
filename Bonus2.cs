@@ -1,11 +1,12 @@
-using System;
-
 namespace Exercise
 {
     class MainClass
     {
+        public static int number;
         public static void Main(string[] args)
         {
+            int countingNumbers;
+
             bool userInput;
             Console.WriteLine("This program prints a multiplication table of the number you enter upto ten numbers");
             Console.WriteLine("Enter a number");
@@ -17,7 +18,7 @@ namespace Exercise
 
                 if (userInput)
                 {
-                    int number = result;
+                    number = result;
                 }
                 else
                 {
@@ -25,6 +26,13 @@ namespace Exercise
                 }
             } while (!userInput);
 
+            for (countingNumbers  = 1; countingNumbers <= 10; countingNumbers++)
+            {
+                Console.WriteLine(number + "*" + countingNumbers = number * countingNumbers);
+            }
+
+
+            //Console.WriteLine("The multiplication table for {0} is: ", number);
         }
     }
 }
