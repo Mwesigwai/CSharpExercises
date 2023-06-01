@@ -43,7 +43,9 @@ namespace CS
         public static void ChangeToFahrenheit()
         {
             PromptUser("degrees celsius");
-            Console.WriteLine("The temperature is " + 32 +  (float)9 / 5 * temperature);     
+             float fahrenheit =  (float)9 / 5 * temperature;
+           float result = fahrenheit + 32;
+            Console.WriteLine("The temperature is " + result + " degrees fahrenheit");   
         }
 
 
