@@ -6,6 +6,7 @@ namespace CS
 
     { 
         public static float tipAsPercentage;
+        public static float tip;
         public static float billCharge;
         public static void Main(string[] args)
         {
@@ -42,8 +43,9 @@ namespace CS
                 }
 
             } while (!goodInput);
-
-            Console.WriteLine("Tip of the bill charge = {0}", tipAsPercentage * billCharge);
+            tip = tipAsPercentage * billCharge;
+            Console.WriteLine("Tip of the bill charge = {0}", tip);
+            Console.WriteLine("The total bill to pay is: {0} in your currency", tip + billCharge );
         }
     }
 }
